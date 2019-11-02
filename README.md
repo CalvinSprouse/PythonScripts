@@ -1,2 +1,2 @@
 # PythonScripts
-Python bits for random projects
+Repo for random stuff made in python
