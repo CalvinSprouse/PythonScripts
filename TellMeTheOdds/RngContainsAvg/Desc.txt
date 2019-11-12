@@ -1,0 +1,1 @@
+What are the odds that out of 3 random numbers picked in an RGB format that one is tha avg
