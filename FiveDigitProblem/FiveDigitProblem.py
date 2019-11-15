@@ -15,6 +15,12 @@ def isCorrect(numbers):
                 if numbers[4] == numbers[0] + numbers[1]:
                     return True
     return False
+    
+def arrayToString(array):
+    toReturn = ""
+    for item in array:
+        toReturn += str(item)
+    return toReturn
 
 
 while True:
@@ -25,10 +31,10 @@ while True:
         number[3] = random.randint(2, 9)
         number[4] = random.randint(2, 9)
 
-        sys.stdout.write("\rCurrent Num: " + str(number) + "\t\tIs Correct: " + str(isCorrect(numbers=number)))
+        sys.stdout.write("\rCurrent Num: " + str(arrayToString(number)) + "\t\tIs Correct: " + str(isCorrect(numbers=number)))
         sys.stdout.flush()
 
     if not correctNums.__contains__(number):
-        print("\n\tSuccessful Num")
+        print("\n")
         correctNums.append(number)
     number = [0, 0, 0, 0, 0]
